@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testTaskApp", "testTaskApp\testTaskApp.csproj", "{CA6971CC-75B2-4842-B8D2-9B078354368C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
