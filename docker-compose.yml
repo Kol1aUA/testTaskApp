@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: usersdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  mongo:
+    image: mongo:5
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+
+  userservice:
+    build:
+      context: .
+      dockerfile: UserService/Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5001:80"
+
+  projectservice:
+    build:
+      context: .
+      dockerfile: ProjectService/Dockerfile
+    depends_on:
+      - mongo
+      - userservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5002:80"
+
+volumes:
+  pgdata:
+  mongodata:

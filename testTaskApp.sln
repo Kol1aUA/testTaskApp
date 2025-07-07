@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testTaskApp", "testTaskApp\testTaskApp.csproj", "{CA6971CC-75B2-4842-B8D2-9B078354368C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{CA6971CC-75B2-4842-B8D2-9B078354368C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectService", "ProjectService\ProjectService.csproj", "{5B922AB2-4C8B-4E5B-A6A2-B670F59AF904}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA6971CC-75B2-4842-B8D2-9B078354368C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B922AB2-4C8B-4E5B-A6A2-B670F59AF904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B922AB2-4C8B-4E5B-A6A2-B670F59AF904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B922AB2-4C8B-4E5B-A6A2-B670F59AF904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B922AB2-4C8B-4E5B-A6A2-B670F59AF904}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
